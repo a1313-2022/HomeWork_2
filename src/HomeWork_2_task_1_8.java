@@ -11,16 +11,19 @@ public class HomeWork_2_task_1_8 {
                         area = radius * radius * pi                                                     */
 
         Scanner input = new Scanner(System.in);
-        System.out.println("Укажите значение переменной радиус:");
+
+        System.out.println("Введите радиус: ");
         double radius = input.nextDouble();
-        final double pi = 3.1415;
-        double area = radius * radius * pi;
-        double perimeter = 2 * radius * pi;
+
+        final double PI = 3.1415;
+
+        double area = radius * radius * PI;
+        double perimeter = 2 * radius * PI;
 
         // вывод результата
-        System.out.println("Круг радиусом = " + (radius) + "\n");
-        System.out.println("Площадь круга с учетом радиуса равна " + (area));
-        System.out.println("Периметр круга с учетом радиуса равен " + (perimeter));
+        System.out.println("Радиус круга составляет: " +radius+ "\n"+
+                           "Площадь круга равна: " +area+ "\n"+
+                           "Периметр равен: " +perimeter);
         /*  end     HomeWork    29 сентября 2022 года.                                                  */
     }
 }

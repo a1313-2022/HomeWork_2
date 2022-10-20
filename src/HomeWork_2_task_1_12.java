@@ -12,7 +12,7 @@ public class HomeWork_2_task_1_12 {
         double kilometers = miles * 1.6;                                                        //1миля = 1.6км
         double rate = (6035) / (60.0 * 60.0);                                                   //100 минут и 35 секунд.
         double kilometersPerHour = kilometers / rate;
-        System.out.println("Средняя скорость в километрах в час составляет = " + (kilometersPerHour));
+        System.out.println("Средняя скорость в километрах в час составляет = " + kilometersPerHour);
         /*  end     HomeWork    29 сентября 2022 года.                                                  */
     }
 }

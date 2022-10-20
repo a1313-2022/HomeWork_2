@@ -19,31 +19,31 @@ public class HomeWork_2_task_1_11 {
         // 7 секунд = 1 рождение | 13 секунд = 1 смерть | 45 секунд = 1 иммигрант.
 
         // 365 дней * 24 часа * 60 минут * 60 секунд = 31536000 секунд в году
-        int SecondsYear = 31536000;
+        int secondsYear = 31536000;
 
         // Через 1 год, количество рождений (7 секунд = 1 рождение)
         // Секунды в год делим на секунды рождения
-        int birthsYear = SecondsYear / 7;
-        System.out.println("Рождений в год: " + birthsYear);
+        int birthsYear = secondsYear / 7;
+        System.out.println("Рождений в год: " +birthsYear);
 
         // Через 1 год, количество смертей (13 секунд = 1 смерть)
         // Секунды в год делим на секунды смерти
-        int deathsYear = SecondsYear / 13;
-        System.out.println("Смертей в год: " + deathsYear);
+        int deathsYear = secondsYear / 13;
+        System.out.println("Смертей в год: " +deathsYear);
 
         // Через 1 год, количество иммигрантов (45 секунд = 1 иммигрант)
         // Секунды в год делим на секунды прибывания иммигранта
-        int immigrantsYear = SecondsYear / 45;
-        System.out.println("Иммигрантов в год: " + immigrantsYear);
+        int immigrantsYear = secondsYear / 45;
+        System.out.println("Иммигрантов в год: " +immigrantsYear+ "\n");
 
-        //Смотрим в совокупности
+        //В совокупности годовой показатель населения составляет:
         int ratePerYear = birthsYear - deathsYear + immigrantsYear;
-        System.out.println("\nПоказатель численности населения с учетом рождаемости и пребыванием иммигрантов, за вычетом смертей составляет: " + ratePerYear + " человек");
-        System.out.println("\nНа конец 1 года население составляет " + (people + (ratePerYear)) + " человек");
-        System.out.println("На конец 2 года население составляет " + (people + (2 * ratePerYear)) + " человек");
-        System.out.println("На конец 3 года население составляет " + (people + (3 * ratePerYear)) + " человек");
-        System.out.println("На конец 4 года население составляет " + (people + (4 * ratePerYear)) + " человек");
-        System.out.println("На конец 5 года население составляет " + (people + (5 * ratePerYear)) + " человек");
+        System.out.println("Годовой показатель численности населения с учетом рождаемости и пребыванием иммигрантов, за вычетом смертей составляет: " +ratePerYear+ " человек!"+
+                           "\nНа конец 1 года население составляет " + (people + (ratePerYear)) + " человек"+
+                           "\nНа конец 2 года население составляет " + (people + (2 * ratePerYear)) + " человек"+
+                           "\nНа конец 3 года население составляет " + (people + (3 * ratePerYear)) + " человек"+
+                           "\nНа конец 4 года население составляет " + (people + (4 * ratePerYear)) + " человек"+
+                           "\nНа конец 5 года население составляет " + (people + (5 * ratePerYear)) + " человек");
         /*  end     HomeWork    29 сентября 2022 года.                                                  */
     }
 }

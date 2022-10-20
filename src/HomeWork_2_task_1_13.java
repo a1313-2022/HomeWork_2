@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class HomeWork_2_task_1_13 {
     public static void main(String[] args) {
         /*  start   HomeWork    29 сентября 2022 года.                                                  */
@@ -12,15 +14,19 @@ public class HomeWork_2_task_1_13 {
                         3.4x + 50.2y = 44.5
                         2.1x + .55y = 5.9
                                                                                                         */
-        double a = 3.4;
-        double b = 50.2;
-        double c = 2.1;
-        double d = 0.55;
-        double e = 44.5;
-        double f = 5.9;
+        Scanner input = new Scanner(System.in);
+
+        double a = input.nextDouble();
+        double b = input.nextDouble();
+        double c = input.nextDouble();
+        double d = input.nextDouble();
+        double e = input.nextDouble();
+        double f = input.nextDouble();
+
         double x = (e * d - b * f) / (a * d - b * c);
         double y = (a * f - e * c) / (a * d - b * c);
-        System.out.println("x = " + x + " y = " + y);
+
+        System.out.println("x = "+x+" y = "+y);
 
         /*  end     HomeWork    29 сентября 2022 года.                                                  */
     }
